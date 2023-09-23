@@ -7,7 +7,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
-    "initial": "git clone https://github.com/klmdevs/anime-parser.git && cd anime-parser && npm i && npm run build",
+    "animeparser": "git clone https://github.com/klmdevs/anime-parser.git && cd anime-parser && npm i && npm run build",
+    "animeparser:update": "cd anime-parser && git pull",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",

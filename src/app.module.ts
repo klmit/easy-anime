@@ -8,7 +8,7 @@ import { UserModule } from './modules/user/user.module';
 import { DataBaseModule } from './database/database.module';
 
 @Module({
-  imports: [AnimeModule, UserModule],
+  imports: [DataBaseModule, AnimeModule, UserModule],
   controllers: [AppController, UserController],
   providers: [AppService, UserService],
 })
