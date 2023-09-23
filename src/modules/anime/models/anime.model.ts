@@ -32,18 +32,19 @@ export class AnimeModel {
       license: { type: String },
       translates: { type: String },
       description: { type: String },
+      rating: { type: Number },
     }),
   )
-  details: Record<string, any>;
+  details: Record<any, any>;
 
   @Prop(
     raw({
       iframeUrl: { type: String },
-      playerUrl: { type: String },
+      player: { type: String },
       translatesIds: { type: Array },
     }),
   )
-  player: Record<string, any>;
+  player: Record<any, any>;
 }
 
 export const AnimeSchema = SchemaFactory.createForClass(AnimeModel);
